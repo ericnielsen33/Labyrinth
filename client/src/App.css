@@ -1,10 +1,18 @@
-.App {
-  text-align: center;
+
+
+body {background-color:#555;}
+.navbar-fixed {
+  top: 0;
+  position: absolute;  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.carousel {
+  margin-top: 100px;
+}
+
+
+.brand-logo {
+  text-align: left;
 }
 
 .App-header {
@@ -26,3 +34,9 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+.parallax-container {
+  height: 300px;
+}
+    

@@ -1,12 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Contact from "../views/Contact";
+import About from "../views/About";
 import PageFooter from '../components/PageFooter';
 import Header from "../components/Header";
 import Home from "../views/Home";
 import NotFoundPage from "../views/NotFoundPage";
-import About from "../views/About";
+import Blog from "../views/Blog";
+
+
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -14,8 +15,8 @@ const AppRouter = () => (
       <Header />
       <Switch>
         <Route path="/" component={Home} exact={true} />
+        <Route path="/blog" component={Blog} exact={true} />
         <Route path="/about" component={About} exact={true} />
-        <Route path="/contact" component={Contact} exact={true} />
         <Route component={NotFoundPage} />
       </Switch>
       <PageFooter />

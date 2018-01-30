@@ -4,41 +4,26 @@ import { Footer } from "react-materialize";
 const PageFooter = () => {
   return (
     <Footer
-      copyrights="&copy 2015 Copyright Text"
-      moreLinks={
-        <a className="grey-text text-lighten-4 right" href="#!">
-          More Links
-        </a>
-      }
+      className="grey darken-4"
       links={
         <ul>
+          <h6 className="bold white-text accent-3">More</h6>
           <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 1
+            <a className="thin white-text accent-1" href="#!">
+              Legal
             </a>
           </li>
           <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 2
-            </a>
-          </li>
-          <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 3
-            </a>
-          </li>
-          <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 4
+            <a className="thin white-text accent-1" href="#!">
+              FAQ
             </a>
           </li>
         </ul>
       }
-      className="example"
     >
-      <h5 className="white-text">Footer Content</h5>
-      <p className="grey-text text-lighten-4">
-        You can use rows and columns here to organize your footer content.
+      <h5 className="thin white-text accent-3">Labyrinth Digital</h5>
+      <p className="thin white-text accent-1">
+        This is a cool slogan. Think about it. It is.
       </p>
     </Footer>
   );
